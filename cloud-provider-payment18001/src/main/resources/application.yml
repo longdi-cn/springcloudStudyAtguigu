@@ -1,0 +1,16 @@
+server: 
+  port: 18001
+  
+spring: 
+  application: 
+    name: cloud-payment-service
+  datasource: 
+    type: com.alibaba.druid.pool.DuridDataSource  # 当前数据源操作类型
+    driver-class-name: org.gjt.mm.mysql.Driver  # mysql驱动包
+    url: 
+    username: 
+    password: 
+    
+mybatis: 
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.atguigu.springcloud.entities  # 所有Entity别名类所在包
